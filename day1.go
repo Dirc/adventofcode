@@ -28,13 +28,6 @@ func fileToArray(filename string) []string {
 
 }
 
-func abs(x int) int {
-	if x < 0 {
-		return -x
-	}
-	return x
-}
-
 func day1(filename string) {
 	inputDay1 := fileToArray(filename)
 

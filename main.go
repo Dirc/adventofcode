@@ -4,7 +4,6 @@ package main
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
 
 func main() {
-	//TIP <p>Press <shortcut actionId="ShowIntentionActions"/> when your caret is at the underlined text
-	// to see how GoLand suggests fixing the warning.</p><p>Alternatively, if available, click the lightbulb to view possible fixes.</p>
-	day1("input-day1-dev.txt")
+	//day1("input-day1-dev.txt")
+	day2("input-day2-dev.txt")
 }
