@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func fileToString(filename string) string {
+func FileToString(filename string) string {
 	file, err := os.Open(filename)
 	if err != nil {
 		panic(err)
@@ -24,9 +24,18 @@ func fileToString(filename string) string {
 
 }
 
-func abs(x int) int {
+func Abs(x int) int {
 	if x < 0 {
 		return -x
 	}
 	return x
+}
+
+func Contains(intList []int, i int) bool {
+	for _, v := range intList {
+		if v == i {
+			return true
+		}
+	}
+	return false
 }

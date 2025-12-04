@@ -60,7 +60,7 @@ func repeatedSequence(number string) bool {
 
 func totalDoubles(filename string) []string {
 	var doubles []string
-	inputDay2 := fileToString(filename)
+	inputDay2 := FileToString(filename)
 
 	input := strings.Split(inputDay2, ",")
 
