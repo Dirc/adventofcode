@@ -14,6 +14,21 @@ func checkPaperRole(apenstaartje rune, runes []rune, i int) bool {
 	return false
 }
 
+func draw(xes []int, original []rune) {
+	printString := ""
+	for i := 0; i < len(original); i++ {
+		if i%137 == 0 {
+			printString += "\n"
+		}
+		if Contains(xes, i) {
+			printString += "x"
+		} else {
+			printString += string(original[i])
+		}
+	}
+	fmt.Println(printString)
+}
+
 func day4(filename string) {
 	var freePaperRoles []int
 	var totalFree int
@@ -51,7 +66,7 @@ func day4(filename string) {
 		}
 
 		// if on right border
-		if i%137 == 9 {
+		if i%137 == 137-1 {
 			for _, j := range rightBorder {
 				if checkPaperRole(apenstaartje, onelineRunes, j) {
 					countAdjecentRoles++
@@ -60,7 +75,7 @@ func day4(filename string) {
 		}
 
 		// Not on border
-		if i%137 != 0 && i%137 != 9 {
+		if i%137 != 0 && i%137 != 137-1 {
 			for _, j := range indexList {
 				if checkPaperRole(apenstaartje, onelineRunes, j) {
 					countAdjecentRoles++
@@ -78,5 +93,6 @@ func day4(filename string) {
 	}
 
 	fmt.Println(freePaperRoles)
+	//draw(freePaperRoles, onelineRunes)
 	fmt.Println(totalFree, " = 13")
 }
