@@ -1,5 +1,25 @@
 
-# Advent of Code 2025
+# Advent of Code 2025 
+
+# Notes
+
+## day 4
+
+```shell
+// check all cases
+i - 1
+i // hoeft niet gecheckt te worden
+i + 1
+
+i - width - 1
+i - width
+i - width + 1
+
+i + width - 1
+i + width
+i + width + 1
+
+```
 
 ## day 2
 
