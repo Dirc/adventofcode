@@ -15,7 +15,7 @@ func getBoundary(idRangeString string) (int, int) {
 }
 
 func getInput(filename string) ([][2]int, []int) {
-	input := fileToArray(filename)
+	input := FileToArray(filename)
 	spacePassed := false
 	// idRanges list of first, last
 	var idRanges [][2]int // tuples of boundarier (first, last)

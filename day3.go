@@ -19,7 +19,7 @@ func getHighest(list []int) (int, int) {
 
 func day3(filename string) {
 	sum := 0
-	input := fileToArray(filename)
+	input := FileToArray(filename)
 
 	for _, item := range input {
 		numericals := make([]int, len(item))

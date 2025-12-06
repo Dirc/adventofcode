@@ -1,35 +1,12 @@
 package main
 
 import (
-	"bufio"
-	"os"
 	"strconv"
 	"strings"
 )
 
-func fileToArray(filename string) []string {
-	file, err := os.Open(filename)
-	if err != nil {
-		panic(err)
-	}
-	defer file.Close()
-
-	scanner := bufio.NewScanner(file)
-	var input []string
-
-	for scanner.Scan() {
-		line := scanner.Text()
-		input = append(input, line)
-	}
-	if err := scanner.Err(); err != nil {
-		panic(err)
-	}
-	return input
-
-}
-
 func day1(filename string) {
-	inputDay1 := fileToArray(filename)
+	inputDay1 := FileToArray(filename)
 
 	var dail = 50
 	var count0 = 0

@@ -34,7 +34,7 @@ func day4Part1(filename string) {
 	var totalFree int
 	//var width int
 
-	input := fileToArray(filename)
+	input := FileToArray(filename)
 
 	var oneline string
 	for _, line := range input {
@@ -102,7 +102,7 @@ func day4Part2(filename string) {
 	var totalFree int
 	//var width int
 
-	input := fileToArray(filename)
+	input := FileToArray(filename)
 
 	var oneline string
 	for _, line := range input {
