@@ -8,7 +8,8 @@ func main() {
 	//day4Part2("day4.txt")
 	//day5Part1("day5.txt")
 	//day5part2("day5.txt")
-	getInputInfo("day6.txt")
-	day6Part1("day6.txt")
+	//getInputInfo("day6.txt")
+	//day6Part1("day6.txt")
+	day7part1("day7-dev.txt")
 
 }

@@ -23,7 +23,6 @@ func FileToArray(filename string) []string {
 		panic(err)
 	}
 	return input
-
 }
 
 func FileToString(filename string) string {
