@@ -2,17 +2,6 @@ package main
 
 import "fmt"
 
-func drawMatrix(matrix []string) {
-	for i := 0; i < len(matrix); i++ {
-		for j := 0; j < len(matrix[0]); j++ {
-			print(matrix[i][j])
-			if j == len(matrix)-1 {
-				print("\n")
-			}
-		}
-	}
-}
-
 func day7part1(filename string) {
 	matrix := FileToArray(filename)
 
@@ -39,7 +28,7 @@ func day7part1(filename string) {
 			matrixUndotted = append(matrixUndotted, row)
 		}
 	}
-	drawMatrix(matrixUndotted)
+	DrawStringArray(matrixUndotted)
 
 	fmt.Println(directions[0])
 
