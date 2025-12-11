@@ -1,16 +1,16 @@
 package main
 
 //
-//import (
+// import (
 //	"fmt"
 //	"strconv"
 //	"strings"
-//)
+// )
 //
-//// [8][2]int
-//// [496][2]int
+// // [8][2]int
+// // [496][2]int
 //
-//func File2Matrix(filename string) [496][2]int {
+// func File2Matrix(filename string) [496][2]int {
 //	input := FileToArray(filename)
 //
 //	coordinates := [496][2]int{}
@@ -22,9 +22,9 @@ package main
 //		}
 //	}
 //	return coordinates
-//}
+// }
 //
-//func day9part1(filename string) {
+// func day9part1(filename string) {
 //	coordinates := File2Matrix(filename)
 //
 //	for _, row := range coordinates {
@@ -47,13 +47,13 @@ package main
 //	}
 //
 //	fmt.Println(areaMax)
-//}
+// }
 //
-//// dev matrix: [9][14]string
-//// prd matrix: [98400][98300]string
-//// or from highest coordinates: [98328][98229]string
+// // dev matrix: [9][14]string
+// // prd matrix: [98400][98300]string
+// // or from highest coordinates: [98328][98229]string
 //
-//func drawBetweenHorizontalPoints(matrix *[][]string, between string, draw string) {
+// func drawBetweenHorizontalPoints(matrix *[][]string, between string, draw string) {
 //	// set Green boundaries
 //	// horizontal boundaries
 //	for i, row := range *matrix {
@@ -76,9 +76,9 @@ package main
 //			}
 //		}
 //	}
-//}
+// }
 //
-//func drawBetweenVerticalPoints(matrix *[][]string, between string, draw string) {
+// func drawBetweenVerticalPoints(matrix *[][]string, between string, draw string) {
 //	// vertical boundaries
 //	for j := 0; j < len(matrix[0]); j++ {
 //		countRed := 0
@@ -100,9 +100,9 @@ package main
 //			}
 //		}
 //	}
-//}
+// }
 //
-//func createMatrix(coordinates [496][2]int, rows int, columns int) [][]string {
+// func createMatrix(coordinates [496][2]int, rows int, columns int) [][]string {
 //	matrix := make([][]string, rows)
 //	for i := range matrix {
 //		matrix[i] = make([]string, columns)
@@ -140,17 +140,17 @@ package main
 //	//drawMatrix(matrix)
 //
 //	return matrix
-//}
+// }
 //
-//func drawMatrix(matrix [][]string) {
+// func drawMatrix(matrix [][]string) {
 //	fmt.Println("")
 //	for i := 0; i < len(matrix); i++ {
 //		fmt.Println(matrix[i])
 //	}
 //	fmt.Println("")
-//}
+// }
 //
-//func GetHighest(filename string) {
+// func GetHighest(filename string) {
 //	high0 := 0
 //	high1 := 0
 //	coordinates := File2Matrix(filename)
@@ -164,9 +164,9 @@ package main
 //		}
 //	}
 //	fmt.Println(high0, high1)
-//}
+// }
 //
-//func day9part2(filename string) {
+// func day9part2(filename string) {
 //	coordinates := File2Matrix(filename)
 //	//matrix := createMatrix(coordinates, 9, 14) // dev
 //	matrix := createMatrix(coordinates, 98400, 98300) // prd
@@ -184,18 +184,18 @@ package main
 //			area := width * height
 //			if area > areaMax {
 //				// check interior for dottes
-//				dotsFound := false
-//				smallest_r, biggest_r := Order(coordinates[i][1], coordinates[j][1])
-//				smallest_c, biggest_c := Order(coordinates[i][0], coordinates[j][0])
-//			dotCheckLoop:
-//				for m := smallest_r + 1; m < biggest_r; m++ {
-//					for n := smallest_c + 1; n < biggest_c; n++ {
-//						if matrix[m][n] == "." {
-//							dotsFound = true
-//							break dotCheckLoop
-//						}
-//					}
-//				}
+// 				dotsFound := false
+// 				smallest_r, biggest_r := Order(coordinates[i][1], coordinates[j][1])
+// 				smallest_c, biggest_c := Order(coordinates[i][0], coordinates[j][0])
+// 			dotCheckLoop:
+// 				for m := smallest_r + 1; m < biggest_r; m++ {
+// 					for n := smallest_c + 1; n < biggest_c; n++ {
+// 						if matrix[m][n] == "." {
+// 							dotsFound = true
+// 							break dotCheckLoop
+// 						}
+// 					}
+// 				}
 //				if !dotsFound {
 //					areaMax = area
 //				}
@@ -205,4 +205,4 @@ package main
 //
 //	fmt.Println(areaMax)
 //
-//}
+// }
